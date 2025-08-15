@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     DEPLOY_USER = 'ubuntu'                         // change if different
-    DEPLOY_HOST = '<TARGET_EC2_PUBLIC_IP>'         // <-- set your target EC2 IP
+    DEPLOY_HOST = '34.228.244.53'         // <-- set your target EC2 IP
     DEPLOY_PATH = '/home/ubuntu/react-app'         // folder on EC2
     SSH_KEY = '~/.ssh/id_rsa'                      // Jenkins server private key path
   }
