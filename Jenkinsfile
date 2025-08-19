@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/etichiranjeevi/sample-react.git'
+                git branch: 'main', url: 'https://github.com/vivek1183/sample-react.git'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy to Target EC2') {
             steps {
                 sh '''
-                scp -o StrictHostKeyChecking=no -r build/* ubuntu@34.224.167.21:/var/www/html/
+                scp -o StrictHostKeyChecking=no -r build/* ubuntu@54.85.116.165:/var/www/html/
                 '''
             }
         }
