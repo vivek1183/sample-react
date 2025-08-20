@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy to Target EC2') {
             steps {
                 sh '''
-                scp -o StrictHostKeyChecking=no -r build/* ubuntu@54.85.116.165:/var/www/html/
+                scp -o StrictHostKeyChecking=no -r build/* ubuntu@3.95.62.240:/var/www/html/
                 '''
             }
         }
